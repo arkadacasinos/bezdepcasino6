@@ -9,6 +9,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru" className="bg-night">
       <head>
+        <meta name="yandex-verification" content="bbbdcf3abe4b1f03" />
         <title>Бездепозитные бонусы казино за регистрацию — бездеп бонусы, бездепы без депозита</title>
         <meta
           name="description"
